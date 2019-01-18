@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/step_tablayout_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="?attr/actionBarSize"
+                app:tabBackground="@color/colorPrimaryDark"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                app:tabSelectedTextColor="@color/text"
+                app:tabTextColor="@color/colorBlue"
+                app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
+                app:tabIndicatorHeight="4dp"
+
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/step_viewpager_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

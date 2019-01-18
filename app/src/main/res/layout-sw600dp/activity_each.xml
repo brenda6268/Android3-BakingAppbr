@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:divider="?android:dividerHorizontal"
+    android:showDividers="middle"
+    android:background="@color/black"
+    android:id="@+id/two_linear_layout">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/add_video_container"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="2">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:orientation="vertical">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/step_tablayout_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+
+                android:minHeight="?attr/actionBarSize"
+                app:tabBackground="@color/colorPrimaryDark"
+                app:tabMode="scrollable"
+                app:tabGravity="center"
+                app:tabSelectedTextColor="@color/text"
+                app:tabTextColor="@color/colorBlue"
+                app:tabTextAppearance="@android:style/TextAppearance.Holo.Large"
+                app:tabIndicatorHeight="4dp"
+
+                />
+            <android.support.v4.view.ViewPager
+                android:id="@+id/step_viewpager_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+    </FrameLayout>
+</LinearLayout>
